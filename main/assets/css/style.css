@@ -12817,13 +12817,14 @@ footer .main-footer__link {
 }
 
 .f-header__nav {
-  background: linear-gradient(rgba(15, 106, 69, 0.81), rgba(15, 106, 69, 0.56));
+  background: linear-gradient(rgba(15, 106, 69, 0.81), rgba(15, 106, 69, 0.81));
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
+  background-color: unset !important;
 }
 
 .f-header__nav::before {
-  background: rgba(15, 106, 69, 0.81);
+  background-color: rgba(15, 106, 69, 0.81);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
