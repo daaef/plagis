@@ -12681,21 +12681,42 @@ em {
   background: #E5B70B;
   border-radius: 4px;
   font-weight: 500;
+  text-transform: capitalize;
 }
 .navbar ul > li > a:not(.uk-button-secondary) {
   text-transform: uppercase;
   transition: 0.3s ease-in-out;
-  font-weight: 500;
+  font-weight: 600;
 }
 .navbar ul > li > a:not(.uk-button-secondary):hover {
   color: #E5B70B;
   text-decoration: none;
 }
+.navbar .drop--down {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(100%);
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #fafafa;
+  left: 50px;
+  width: 250px;
+  padding: 30px;
+  text-align: center;
+  background: #207A46;
+  border-radius: 0px 0px 16px 16px;
+}
+@media (max-width: 800px) {
+  .navbar .drop--down {
+    width: 180px;
+    font-size: 2rem;
+  }
+}
 
-.sticky.navbar {
-  background: linear-gradient(#0f6a45, rgba(15, 106, 69, 0.86));
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+.navbar {
+  background: #207A46;
+}
+.navbar.sticky {
   position: fixed;
   top: 0;
 }
