@@ -12677,12 +12677,27 @@ em {
 .navbar {
   transition: 0.3s ease-in-out;
 }
+.navbar .uk-button-secondary {
+  background: #E5B70B;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.navbar ul > li > a:not(.uk-button-secondary) {
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+}
+.navbar ul > li > a:not(.uk-button-secondary):hover {
+  color: #E5B70B;
+  text-decoration: none;
+}
 
 .sticky.navbar {
-  background: linear-gradient(#0f6a45, rgba(15, 106, 69, 0.56));
+  background: linear-gradient(#0f6a45, rgba(15, 106, 69, 0.86));
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   position: fixed;
+  top: 0;
 }
 
 .side--card {
@@ -12727,8 +12742,14 @@ em {
   color: #fafafa;
 }
 
+.get--section {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
 .announcements {
-  padding: 250px 0 100px;
+  padding: 100px 0 0;
+  margin-top: 50px;
   position: relative;
 }
 .announcements:before {
@@ -12780,6 +12801,13 @@ em {
   color: #207A46;
 }
 
+.blog--section {
+  padding-bottom: 50px;
+  padding-top: 0;
+}
+.blog--section h3 {
+  margin-top: 50px;
+}
 .blog--section .uk-card {
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(68, 68, 68, 0.1);
@@ -12795,6 +12823,9 @@ em {
 .blog--section .uk-card .uk-card-title {
   color: #555555;
   font-weight: bold;
+}
+.blog--section .uk-card p {
+  margin-top: 10px;
 }
 
 footer {
@@ -12816,17 +12847,49 @@ footer .main-footer__link {
   color: #fafafa;
 }
 
-.f-header__nav {
-  background: linear-gradient(rgba(15, 106, 69, 0.81), rgba(15, 106, 69, 0.81));
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  background-color: unset !important;
+@media (max-width: 1024px) {
+  .f-header__nav {
+    background: linear-gradient(rgba(15, 106, 69, 0.81), rgba(15, 106, 69, 0.81));
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    background-color: unset !important;
+  }
+  .f-header__nav::before {
+    background-color: rgba(15, 106, 69, 0.81);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+  }
 }
-
-.f-header__nav::before {
-  background-color: rgba(15, 106, 69, 0.81);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+.topbar {
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+}
+.topbar .topbar--flex {
+  justify-content: space-between;
+}
+@media (max-width: 800px) {
+  .topbar .topbar--flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.topbar .phone--details, .topbar .email--details {
+  display: flex;
+  align-items: center;
+}
+.topbar .phone--details span, .topbar .email--details span {
+  color: #555555;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-right: 4px;
+}
+.topbar .phone--details span.uk-icon, .topbar .email--details span.uk-icon {
+  color: #207A46;
+}
+.topbar svg {
+  color: #207A46;
 }
 
 /* -------------------------------- 
