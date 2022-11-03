@@ -17956,6 +17956,16 @@ Usage: codyhouse.co/license
   color: #39b54a;
 }
 
+.mission--vision:first-of-type {
+  padding-left: 0;
+}
+
 .core--values--sect p{
   margin-top: 20px;
+}
+
+.mis-vis {
+  padding-bottom: 50px;
+  border-bottom: solid 2px #39b54a;
+  margin-bottom: 50px;
 }
