@@ -2451,7 +2451,7 @@ img, video, svg {
 }
 
 [data-theme] {
-  background-color: #207a46;
+  background-color: var(--color-bg, hsl(0deg, 0%, 100%));
   color: var(--color-contrast-high, hsl(210deg, 7%, 21%));
 }
 
@@ -17970,4 +17970,8 @@ Usage: codyhouse.co/license
   padding-bottom: 50px;
   border-bottom: solid 2px #39b54a;
   margin-bottom: 50px;
+}
+
+.bg-green {
+  background-color: #207a46 !important;
 }
