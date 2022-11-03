@@ -17956,8 +17956,10 @@ Usage: codyhouse.co/license
   color: #39b54a;
 }
 
-.mission--vision:first-of-type {
-  padding-left: 0;
+@media (min-width: 1025px) {
+  .mission--vision:last-of-type {
+    padding-left: 30px;
+  }
 }
 
 .core--values--sect p{
