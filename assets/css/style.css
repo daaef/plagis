@@ -12858,6 +12858,7 @@ footer .logo--section {
 }
 footer .logo--section .footer--logo {
   height: 120px;
+  object-fit: contain;
 }
 footer .logo--section h5 {
   color: #fafafa;
@@ -16805,7 +16806,7 @@ Usage: codyhouse.co/license
 
 .f-header__logo {
   display: block;
-  width: var(--f-header-logo-width);
+  width: 200px;
   flex-shrink: 0;
   text-decoration: none;
 }
@@ -17928,3 +17929,33 @@ Usage: codyhouse.co/license
 
 -------------------------------- */ /*! purgecss start ignore */
 /*! purgecss end ignore */
+
+.page--header {
+  padding-top: 100px;
+}
+
+.text--header {
+  font-family: sans-serif !important;
+}
+
+.uk-breadcrumb > li > a{
+  color: #fafafa;
+  text-decoration: none;
+}
+.values--img {
+  padding
+}
+
+.values--img  img {
+  height: 350px;
+  width: auto;
+  object-fit: contain;
+}
+
+.mission--vision h3 {
+  color: #39b54a;
+}
+
+.core--values--sect p{
+  margin-top: 20px;
+}
